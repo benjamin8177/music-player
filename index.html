@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player UI</title>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="player-container">
+        <div class="player">
+            <div class="top-bar">
+                <i class="fa-solid fa-angle-down"></i>
+                <span>Now Playing</span>
+                <i class="fa-solid fa-ellipsis-vertical"></i>
+            </div>
+            
+            <div class="album-art" id="album-art">
+                <img src="https://images.unsplash.com/photo-1614613535308-eb5fbd3d2c17?auto=format&fit=crop&w=400&q=80" alt="Album Art">
+                <div class="visualizer"></div>
+            </div>
+            
+            <div class="song-info">
+                <h2 id="song-title">Neon Nights</h2>
+                <p id="artist">Synthwave Dreams</p>
+            </div>
+            
+            <div class="progress-container">
+                <div class="time">
+                    <span id="current-time">1:20</span>
+                    <span id="duration">3:45</span>
+                </div>
+                <div class="progress-bar" id="progress-bar">
+                    <div class="progress" id="progress"></div>
+                </div>
+            </div>
+            
+            <div class="controls">
+                <button class="action-btn"><i class="fa-solid fa-shuffle"></i></button>
+                <button class="action-btn" id="prev"><i class="fa-solid fa-backward-step"></i></button>
+                <button class="play-btn" id="play"><i class="fa-solid fa-play"></i></button>
+                <button class="action-btn" id="next"><i class="fa-solid fa-forward-step"></i></button>
+                <button class="action-btn active"><i class="fa-solid fa-repeat"></i></button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
